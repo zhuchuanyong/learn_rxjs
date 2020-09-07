@@ -34,7 +34,18 @@ module.exports = {
         use: {
           loader: 'html-loader'
         }
-      }
+      },
+      {
+        test: /\.js$/,
+        exclude: '/node_modules/',
+        use: [
+            // js babel处理
+          {
+            loader: 'babel-loader',
+          },
+        ],
+
+      },
     ]
   }
 };

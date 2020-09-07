@@ -1,4 +1,5 @@
 if (process.env.NODE_ENV !== 'production') {
     require('./index.html')
 }
- import './Observable'
+//  import './Observable'
+ import './Observable2'
